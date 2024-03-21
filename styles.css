@@ -1,0 +1,123 @@
+/* off-sets */
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--purple-title: hsl(332, 51%, 32%);
+	--brown-color: hsl(14, 45%, 36%);
+	--white-background: hsl(0, 0%, 100%);
+	--rose-background: hsl(330, 100%, 98%);
+	--background-color: hsl(30, 54%, 90%);
+	--black-title: hsl(24, 5%, 18%);
+	--black-text: hsla(15, 4%, 18%, 0.719);
+}
+
+@font-face {
+	font-family: "Outfit-Variable";
+	src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+	font-family: "YoungSerif";
+	src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+body {
+	background-color: var(--background-color);
+	max-width: 780px;
+	font-size: 16px;
+	margin: auto;
+	font-family: "Outfit-Variable";
+	font-size: 1rem;
+	color: var(--black-text);
+	line-height: 1.4;
+}
+
+main {
+	background-color: white;
+	padding: 25px;
+}
+@media screen and (min-width: 740px) {
+	main {
+		border-radius: 15px;
+		margin: 35px 15px;
+	}
+}
+
+img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+/* Typography */
+
+h1,
+h2 {
+	font-family: "YoungSerif";
+}
+
+h1 {
+	font-size: 2rem;
+	color: var(--black-title);
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	color: var(--brown-color);
+	margin: 15px 0;
+}
+
+h3 {
+	font-size: 1.2rem;
+	color: var(--purple-title);
+	margin: 15px 0;
+}
+
+b {
+	color: var(--black-title);
+}
+
+.prep-time-section {
+	background-color: var(--rose-background);
+	padding: 15px 25px;
+	margin: 25px 0;
+	border-radius: 10px;
+}
+
+hr {
+	margin: 25px 0;
+}
+
+li {
+	margin-left: 30px;
+	margin-bottom: 0.6rem;
+	list-style-position: outside;
+	padding-left: 15px;
+}
+
+/* table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 20px 0 10px;
+}
+td {
+	padding: 15px;
+}
+td:nth-child(2) {
+	color: var(--brown-color);
+	font-weight: bold;
+}
+tr {
+	border-bottom: 0.7px solid var(--black-text);
+}
+
+table tr:last-of-type {
+	border-bottom: none;
+}
