@@ -1,5 +1,7 @@
 # Recipe page
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b133fb6-f8be-442c-85e7-0e36071433ce/deploy-status)](https://app.netlify.com/sites/recipe-page-fm-alvs/deploys)
+
 A simple page, that could be part of a blog with more recipe's included. Built with HTML and CSS.
 
 Someday I'll update this project to be a complete blog built with Astro JS.
